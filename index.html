@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity for Space - C4S</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Agency FB', serif;
+        }
+        body {
+            background-color: #131E3A;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s;
+        }
+        ul {
+            list-style: none;
+        }
+        /* Header */
+        header {
+            background-image: url('file:///C:/Users/kaame/Desktop/Hackathon/LOGO.jpg'); /* Path to the uploaded image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 22px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo img {
+            max-height: 50px;
+            width: auto;
+        }
+        header nav ul {
+            display: flex;
+            gap: 20px;
+        }
+        header nav ul li a {
+            color: white;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+        header nav ul li a:hover {
+            color: #1D4157;
+        }
+        /* Hero Section */
+        .hero {
+            background-image: url('image_jpeg.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+        .cta-btn {
+            background-color: #f4b400;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .cta-btn:hover {
+            background-color: #c79200;
+        }
+        /* Services Section */
+        .services {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #2A4B7C;
+            color: white;
+        }
+        .services h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        .service-item {
+            margin: 20px;
+            background-color: white;
+            color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .service-item h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        /* About Section */
+        .about {
+            padding: 40px 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .about p {
+            max-width: 800px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+        /* Blog Section */
+        .blog {
+            padding: 40px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+        .blog ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+        .blog ul li a {
+            font-size: 1.2rem;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .blog ul li a:hover {
+            color: #f4b400;
+        }
+        /* Contact Section */
+        .contact {
+            background-image: url('image_jpeg.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+	}
+        .contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .contact input, .contact textarea {
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+        .contact button {
+            background-color: #f4b400;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact button:hover {
+            background-color: #c79200;
+        }
+        /* Footer */
+        footer {
+            padding: 20px;
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+        }
+        footer .footer-links a {
+            color: white;
+            margin: 0 10px;
+        }
+        footer .footer-links a:hover {
+            color: #f4b400;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="file:///C:/Users/kaame/Desktop/Hackathon/LOGO.jpg" alt="C4S Logo" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <section class="hero" id="home">
+        <h2>Welcome to C4S</h2>
+        <p>Explore our features and services.</p>
+        <a href="#services" class="cta-btn">Learn More</a>
+    </section>
+ 
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="service-item">
+            <h3>Satellite security</h3>
+            <p>Satellite constellation security with encrypted keys</p>
+        </div>
+        <div class="service-item">
+            <h3>Virtual satellite program</h3>
+            <p>Virtual satellite for secure message routing</p>
+        </div>
+        <div class="service-item">
+            <h3>Ground terminals solutions</h3>
+            <p>Ground terminals for scrambled message distribution</p>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>We are dedicated to providing the best solutions to our customers. Our focus is on cybersecurity for space-based technologies and ensuring secure communications in space missions.</p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
